@@ -1,12 +1,3 @@
-#include "bits/stdc++.h"
-using namespace std;
-#define Would
-#define you
-const long long INF = 9999999999999999999;
-const int MOD = 1e9 + 7;
-const double pi = 3.141592653589793238;
-const int SIZE = 1 << 17;
-
 template<typename T>
 struct lazysegtree {
 	T node[2 * SIZE], lazy[2 * SIZE], I_upd,I_qry;
@@ -75,7 +66,7 @@ long long upd(long long a, long long b, int c, int d) { return min(a,b); }
 long long fin(long long a, long long b) { return min(a, b); }
 lazysegtree<long long>seg(upd, fin, INF,INF);
 
-//ex(DSL_2)
+//ex(AOJ:DSL_2)
 int main() {
 	int a, b;
 	cin >> a >> b;
