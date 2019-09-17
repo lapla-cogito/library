@@ -1,7 +1,3 @@
-vector<long long>dij;//distance
-struct edge { int to, cost; };
-vector<vector<edge>>G;
-
 void dijkstra(int n) {
 	priority_queue<pair<long long, long long>, vector<pair<long long, long long>>, greater<pair<long long, long long>>>que;
 	fill(dij.begin(), dij.end(), INF);
