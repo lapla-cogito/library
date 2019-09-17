@@ -1,0 +1,46 @@
+#PageTopBtn {
+            position: fixed;
+            bottom: -10px;
+            right: 10px;
+        }
+
+            #PageTopBtn a {
+                display: block;
+                text-decoration: none;
+                color: black;
+                background: white;
+                text-align: center;
+                border-radius: 50%;
+                outline: none;
+            }
+
+                #PageTopBtn a:hover {
+                    text-decoration: none;
+                    background: red;
+                }
+
+        /*for PC*/
+        @media (min-width: 768px) {
+            #PageTopBtn {
+                font-size: 30px;
+            }
+
+                #PageTopBtn a {
+                    width: 70px;
+                    height: 70px;
+                    padding: 24px 0;
+                }
+        }
+
+        /*for smartphone*/
+        @media (max-width: 767px) {
+            #PageTopBtn {
+                font-size: 30px;
+            }
+
+                #PageTopBtn a {
+                    width: 60px;
+                    height: 60px;
+                    padding: 22px 0;
+                }
+        }
