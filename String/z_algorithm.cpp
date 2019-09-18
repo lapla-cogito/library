@@ -6,11 +6,11 @@ vector<ll> z_algorithm(const string& s) {
 		}
 		else {
 			ll k = max(0ll, j + prefix[j] - i);
-			while (i + k < s.size() && s[k] == s[i + k]) ++k;
+			while (i + k < s.length() && s[k] == s[i + k]) ++k;
 			prefix[i] = k;
 			j = i;
 		}
 	}
-	prefix[0] = (int)s.size();
+	prefix[0] = (int)s.length();
 	return prefix;
 }
