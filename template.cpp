@@ -1,5 +1,3 @@
-//«template«
-
 #include "bits/stdc++.h"
 using namespace std;
 #define Would
@@ -65,9 +63,6 @@ double add(double a, double b) {
 	if (abs(a + b) < EPS * (abs(a) + abs(b))) { return 0; }
 	return a + b;
 }
-
-
-//ªtemplateª
 
 int main() {
 
