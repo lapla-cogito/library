@@ -1,5 +1,3 @@
-//«template«
-
 #include "bits/stdc++.h"
 using namespace std;
 #define Would
@@ -66,8 +64,6 @@ double add(double a, double b) {
 	return a + b;
 }
 
-
-//ªtemplateª
 
 int main() {
 
