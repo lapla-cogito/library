@@ -5,13 +5,13 @@ using namespace std;
 #define all(n)  n.begin(),n.end()
 #define rall(n) n.rbegin(),n.rend()
 typedef long long ll;
-const ll INF = 1e18;
+const ll INF = 2147483647;
 const ll MOD = 1e9 + 7;
 const double EPS = 1e-10;
 const double pi = acos(-1);//3.1415926535897932384626433832795028...
-const ll SIZE = 1 << 17;
+const ll SIZE = 2000005;
 int dx[] = { 1,0,-1,0 }, dy[] = { 0,1,0,-1 }, alp[30];
-ll fac[200005], finv[200005], inv[200005];
+ll fac[SIZE], finv[SIZE], inv[SIZE];
 vector<ll>dij;
 struct edge { ll to, cost; };
 vector<vector<edge> >G;
@@ -62,6 +62,10 @@ void outp(vector<T>v) {
 double add(double a, double b) {
 	if (abs(a + b) < EPS * (abs(a) + abs(b))) { return 0; }
 	return a + b;
+}
+
+double len(int a, int b, int c, int d) {
+	return (double)sqrt((a - c) * (a - c) + (b - d) * (b - d));
 }
 
 
