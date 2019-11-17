@@ -15,6 +15,8 @@ ll fac[SIZE], finv[SIZE], inv[SIZE];
 vector<ll>dij;
 struct edge { ll to, cost; };
 vector<vector<edge> >G;
+template<class T> inline bool chmax(T& a, T b) { if (a < b) { a = b; return true; } return false; }
+template<class T> inline bool chmin(T& a, T b) { if (a > b) { a = b; return true; } return false; }
 
 ll mod_pow(ll a, ll b) {
 	ll res = 1, mul = a;
