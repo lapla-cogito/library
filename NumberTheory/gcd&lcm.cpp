@@ -1,9 +1,9 @@
-long long  gcd(long long  a, long long  b){
-    if(b==0) return a;
+ll gcd(ll a, ll b){
+    if(b==0){ return a; }
     return gcd(b, a%b);
 }
  
-long long lcm(long long a, long long b){
-    long long  g = gcd(a,b);
+ll lcm(ll a, ll b){
+    ll g = gcd(a,b);
     return a/g * b;
 }
