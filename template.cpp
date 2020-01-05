@@ -8,7 +8,7 @@ typedef long long ll;
 const ll INF = 2147483647;
 const ll MOD = 1e9 + 7;
 const double EPS = 1e-10;
-const double pi = acos(-1);//3.1415926535897932384626433832795028...
+const long double pi = acos((long double)-1);//3.1415926535897932384626433832795028...
 const ll SIZE = 2000005;
 int dx[] = { 1,0,-1,0 }, dy[] = { 0,1,0,-1 }, alp[30];
 ll fac[SIZE], finv[SIZE], inv[SIZE];
