@@ -6,8 +6,8 @@ struct ConvexHullTrick {
 		pair<ll, ll> p0 = make_pair(a, b);
 		while (dq.size() >= 2) {
 			ll sz = dq.size();
-			std::pair<ll, ll> p1 = dq[sz - 1];
-			std::pair<ll, ll> p2 = dq[sz - 2];
+			pair<ll, ll> p1 = dq[sz - 1];
+			pair<ll, ll> p2 = dq[sz - 2];
 			if ((p0.second - p1.second) * (p0.first - p2.first) < (p0.second - p2.second) * (p0.first - p1.first)) { break; }
 			dq.pop_back();
 		}
