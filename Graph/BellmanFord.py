@@ -18,7 +18,7 @@ def bellman(s,n,adj):
     return dist
         
 
-verify: https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/all/GRL_1_B
+#verify: https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/all/GRL_1_B
  
 v,e,r = map(int,input().split())
 adj = [[] * v for _ in range(v)]
