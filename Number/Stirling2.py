@@ -9,7 +9,7 @@ def stirling(n,k):
             res[n][k] = (mon[k - 1] + k * mon[k]) % MOD
     return res[n][k]
  
-verify: https://onlinejudge.u-aizu.ac.jp/problems/DPL_5_I
+#verify: https://onlinejudge.u-aizu.ac.jp/problems/DPL_5_I
 
 n,k = map(int,input().split())
 print(stirling(n,k) % MOD)
