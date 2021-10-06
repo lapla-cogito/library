@@ -12,7 +12,7 @@ def warshall(n,dis):
  
     return dis
  
-verify: https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/1/GRL_1_C
+#verify: https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/1/GRL_1_C
 
 v,e = map(int,input().split())
 adj = [[INF] * v for _ in range(v)]
