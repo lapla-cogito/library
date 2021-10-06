@@ -17,7 +17,7 @@ def dijkstra(s,n,adj):
                 heappush(h,(dist[to],to))
     return dist
  
-verify: https://atcoder.jp/contests/joi2008yo/tasks/joi2008yo_f
+#verify: https://atcoder.jp/contests/joi2008yo/tasks/joi2008yo_f
 
 n,k = map(int,input().split())
 adj = [[] * n for _ in range(n)]
