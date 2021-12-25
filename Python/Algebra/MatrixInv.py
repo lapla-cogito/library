@@ -1,9 +1,8 @@
 def inv(a):
     n = len(a)
-    I = [[0 if i != j else 1 for i in range(n)] for j in range(n)]
-    print(I)
     if n != len(a[0]):
         return None
+    I = [[0 if i != j else 1 for i in range(n)] for j in range(n)]
     for i in range(n):
         ma = abs(a[i][i])
         loc = i
