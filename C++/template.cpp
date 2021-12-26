@@ -15,15 +15,16 @@ typedef vector<P> Q; //polygon
 #define GE(n,m) ((n) + EPS > (m))
 #define EQ(n,m) (abs((n)-(m)) < EPS)
 const ll INF = 2147483647;
-const ll MOD = 1e9 + 7;
+const ll MOD = 998244353;
 const D EPS = 1e-10;
 const D pi = acos(-1); //3.1415...
-const ll SIZE = 2000005;
+const ll SIZE = 5000005;
 int dx[] = { 1,0,-1,0 }, dy[] = { 0,1,0,-1 }, alp[30];
 ll fac[SIZE], finv[SIZE], inv[SIZE];
 vector<ll>dij;
 struct edge { ll to, cost; };
-vector<vector<edge>> G;
+using Graph = vector<vector<edge>>;
+Graph G;
 template<class T> inline bool chmax(T& a, T b) { if (a < b) { a = b; return true; } return false; }
 template<class T> inline bool chmin(T& a, T b) { if (a > b) { a = b; return true; } return false; }
 
@@ -61,11 +62,11 @@ auto make_v(size_t a, Ts... ts) {
 
 template<typename T, typename V>
 typename enable_if<is_class<T>::value == 0>::type
-fill_v(T & t, const V & v) { t = v; }
+fill_v(T& t, const V& v) { t = v; }
 
 template<typename T, typename V>
 typename enable_if<is_class<T>::value != 0>::type
-fill_v(T & t, const V & v) {
+fill_v(T& t, const V& v) {
 	for (auto& e : t) fill_v(e, v);
 }
 
@@ -80,8 +81,4 @@ void outp(vector<T>v) {
 double add(D a, D b) {
 	if (abs(a + b) < EPS * (abs(a) + abs(b))) { return 0; }
 	return a + b;
-}
-
-int main(){
-
 }
