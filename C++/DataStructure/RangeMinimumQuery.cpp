@@ -1,16 +1,16 @@
 class RMQ {
 private:
-	ll n;
-	vector<ll>node;
+	int n;
+	vector<int>node;
 
 public:
-	void init(ll size) {
+	void init(int size) {
 		n = 1;
 		while (n < size) { n *= 2; }
 		node.resize(2 * n - 1, INF);
 	}
 
-	void update(ll i, ll x) {
+	void update(int i, int x) {
 		i += n - 1;
 		node[i] = x;
 		while (i > 0) {
@@ -19,7 +19,7 @@ public:
 		}
 	}
 
-	ll query(ll a, ll b, ll k = 0, ll l = 0, ll r = -1) {
+	ll query(int a, int b, int k = 0, int l = 0, int r = -1) {
 		if (r < 0) { r = n; }
 		if (r <= a || b <= l) { return INF; }
 		if (a <= l && r <= b) { return node[k]; }
