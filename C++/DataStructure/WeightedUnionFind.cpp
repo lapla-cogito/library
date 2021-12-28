@@ -39,6 +39,7 @@ public:
 	int diff(int x, int y) { return weight[y] - weight[x]; }
 };
 
+/*verify: https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/1/DSL_1_B
 int main() {
 	int n, q;
 	cin >> n >> q;
@@ -58,3 +59,4 @@ int main() {
 		}
 	}
 }
+*/
