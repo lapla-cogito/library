@@ -53,7 +53,6 @@ public:
 				for (int k = 0; k < 9; ++k) { cout << v[j][k] << " "; }
 				cout << endl;
 			}
-			cout << endl;
 		}
 		else {
 			auto ne = nex(v);

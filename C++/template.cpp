@@ -22,9 +22,10 @@ const ll SIZE = 5000005;
 int dx[] = { 1,0,-1,0 }, dy[] = { 0,1,0,-1 }, alp[30];
 ll fac[SIZE], finv[SIZE], inv[SIZE];
 vector<ll>dij;
-struct edge { ll to, cost; };
+struct edge { int to, cost; };
 using Graph = vector<vector<edge>>;
 Graph G;
+struct point { int px, py; };
 template<class T> inline bool chmax(T& a, T b) { if (a < b) { a = b; return true; } return false; }
 template<class T> inline bool chmin(T& a, T b) { if (a > b) { a = b; return true; } return false; }
 
